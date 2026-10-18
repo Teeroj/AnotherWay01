@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5faf5">
+  <title>Another Way | Decision Support</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#home" aria-label="Another Way home">
+        <span class="brand-mark">✦</span>
+        <span><b>Another <em>Way</em></b><small>DECISION ANALYSIS &amp; SUPPORT</small></span>
+      </a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <p class="nav-label">เมนูหลัก</p>
+        <a class="nav-link" href="#home" data-route="home"><span>⌂</span>หน้าหลัก</a>
+        <a class="nav-link" href="#examples" data-route="examples"><span>▧</span>ตัวอย่างการใช้งาน</a>
+        <a class="nav-link" href="#analyze" data-route="analyze"><span>✧</span>วิเคราะห์การตัดสินใจ</a>
+        <p class="nav-label">ของฉัน</p>
+        <a class="nav-link" href="#history" data-route="history"><span>◷</span>ประวัติการวิเคราะห์<em class="badge" id="histBadge" hidden>0</em></a>
+        <a class="nav-link" href="#guide" data-route="guide"><span>✎</span>คู่มือ &amp; เคล็ดลับ</a>
+        <a class="nav-link" href="#about" data-route="about"><span>ⓘ</span>เกี่ยวกับเรา</a>
+        <p><span>จัดทำโดย Teeroj
+      </nav>
+      <div class="sidebar-quote">
+        <span class="quote-leaf">❧</span>
+        <p>“ทุกการตัดสินใจ<br>มีทางเลือกเสมอ<br>เราช่วยให้คุณเห็น<br>ความเป็นไปได้ที่มากขึ้น”</p>
+      </div>
+      <div class="sidebar-bottom"><span class="avatar">A</span><span><b>กลุ่ม 10</b><small>ยินดีต้อนรับ</small></span></div>
+    </aside>
+
+    <div class="backdrop" id="backdrop"></div>
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-toggle" id="menuToggle" aria-label="เปิดเมนู">☰</button>
+        <div class="breadcrumb">Another Way <span>/</span> <b id="crumb">หน้าหลัก</b></div>
+        <div class="top-actions">
+          <button class="icon-btn" id="themeToggle" title="เปลี่ยนธีม" aria-label="เปลี่ยนธีม">☼</button>
+          <button class="login-btn" id="loginBtn">♙ <span>เข้าสู่ระบบ</span></button>
+        </div>
+      </header>
+
+      <div class="page" data-page="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> THINK CLEARLY · CHOOSE CONFIDENTLY</div>
+          <h1>ยังไม่แน่ใจว่าจะ<br><span>เลือกอะไรดี?</span></h1>
+          <p>ให้ Another Way ช่วยวิเคราะห์ข้อดี ข้อเสีย ความเหมาะสม และผลลัพธ์ที่อาจเกิดขึ้น เพื่อให้คุณตัดสินใจได้อย่างมั่นใจ</p>
+          <a class="btn btn-primary" href="#analyze">เริ่มวิเคราะห์เลย <span>↗</span></a>
+          <div class="hero-trust"><span>✓</span> มองทุกทางเลือกอย่างเป็นระบบ <span class="trust-divider">•</span> ตัดสินใจในแบบของคุณ</div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="sun"></div><div class="mountain mountain-back"></div><div class="mountain mountain-mid"></div><div class="mountain mountain-front"></div>
+          <div class="river"></div><div class="art-leaf leaf-one">✦</div><div class="art-leaf leaf-two">✦</div>
+          <div class="art-caption"><span class="caption-icon">↗</span><span><b>Find your way</b><small>One thoughtful choice at a time</small></span></div>
+        </div>
+      </section>
+
+      <section class="benefits" aria-label="จุดเด่น">
+        <div class="benefit"><span class="benefit-icon">◎</span><span><b>วิเคราะห์ข้อดี–ข้อเสีย</b><small>เปรียบเทียบตัวเลือกได้ชัดเจน</small></span></div>
+        <div class="benefit"><span class="benefit-icon">♧</span><span><b>ประเมินความเหมาะสม</b><small>คำนึงถึงสิ่งที่สำคัญกับคุณ</small></span></div>
+        <div class="benefit"><span class="benefit-icon">↗</span><span><b>มองเห็นผลลัพธ์</b><small>เตรียมพร้อมกับความเป็นไปได้</small></span></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading"><div><div class="eyebrow">QUICK START</div><h2>เริ่มต้นง่าย ๆ ใน 3 ขั้นตอน</h2><p>ใช้เวลาไม่ถึง 5 นาที ก็เห็นภาพรวมของทุกทางเลือก</p></div></div>
+        <div class="tip-grid">
+          <a class="tip-card" href="#analyze"><span class="round-icon">✎</span><b>1 · ใส่คำถามและตัวเลือก</b><p>พิมพ์สิ่งที่ลังเล พร้อมตัวเลือก 2–6 ข้อ และเลือกสิ่งที่สำคัญที่สุดสำหรับคุณ</p></a>
+          <a class="tip-card" href="#analyze"><span class="round-icon">◎</span><b>2 · ให้คะแนนแต่ละเกณฑ์</b><p>เลื่อนให้คะแนนงบประมาณ ความสะดวก ประสบการณ์ และเวลา ระบบคำนวณคะแนนถ่วงน้ำหนักให้ทันที</p></a>
+          <a class="tip-card" href="#history"><span class="round-icon">◷</span><b>3 · บันทึกและกลับมาดู</b><p>เก็บผลไว้ในเครื่องของคุณ เปรียบเทียบอีกครั้งเมื่อมีข้อมูลใหม่</p></a>
+        </div>
+      </section>
+      <section class="section"><div class="cta-band"><div><b>ยังไม่รู้จะเริ่มตรงไหน?</b><p>ลองดูตัวอย่างการวิเคราะห์จริง 3 สถานการณ์ แล้วนำไปปรับใช้กับเรื่องของคุณ</p></div><a class="btn btn-light" href="#examples">ดูตัวอย่าง <span>↗</span></a></div></section>
+      </div>
+      <div class="page" data-page="examples" hidden>
+      <section class="section" id="examples-sec">
+        <div class="section-heading">
+          <div><div class="eyebrow">GET INSPIRED</div><h2>ตัวอย่างการใช้งาน</h2><p>เลือกตัวอย่างเพื่อดูวิธีวิเคราะห์การตัดสินใจในสถานการณ์ต่าง ๆ</p></div>
+          <span class="soft-pill">3 ตัวอย่างแนะนำ</span>
+        </div>
+        <div class="example-grid">
+          <button class="example-card" data-example="travel">
+            <div class="example-photo photo-mountain"><span class="photo-tag">POPULAR</span></div>
+            <div class="example-card-body"><span class="round-icon">⌁</span><span class="example-text"><b>ไปเที่ยวกับเพื่อน</b><small>“จะไปเที่ยวที่ไหนดี?”</small></span><span class="card-arrow">↗</span></div>
+          </button>
+          <button class="example-card" data-example="food">
+            <div class="example-photo photo-food"><span class="photo-tag">EVERYDAY</span></div>
+            <div class="example-card-body"><span class="round-icon">♨</span><span class="example-text"><b>เลือกร้านอาหาร</b><small>“กินอะไรดีในมื้อนี้?”</small></span><span class="card-arrow">↗</span></div>
+          </button>
+          <button class="example-card" data-example="life">
+            <div class="example-photo photo-path"><span class="photo-tag">BIG DECISION</span></div>
+            <div class="example-card-body"><span class="round-icon">⚑</span><span class="example-text"><b>เลือกเส้นทางชีวิต</b><small>“ควรไปทางไหนดี?”</small></span><span class="card-arrow">↗</span></div>
+          </button>
+        </div>
+      </section>
+
+      <section class="analysis-panel section" id="analysis">
+        <div class="section-heading analysis-section-heading">
+          <div><div class="eyebrow">A CLOSER LOOK</div><h2>ตัวอย่างผลการวิเคราะห์</h2><p id="analysisSubtitle">ตัวอย่างที่ 1 · ไปเที่ยวกับเพื่อน</p></div>
+          <span class="live-pill"><i></i> INTERACTIVE DEMO</span>
+        </div>
+        <div class="analysis-layout">
+          <aside class="option-sidebar">
+            <h3>ตัวเลือกที่มีให้พิจารณา</h3>
+            <div id="optionList" class="option-list"></div>
+          </aside>
+          <div class="analysis-main">
+            <div class="detail-header">
+              <div class="detail-thumb" id="detailThumb">▲</div>
+              <div class="detail-title-wrap"><h3 id="detailTitle">ทริปภูเขา / ป่าไม้</h3><p id="detailSub">สงบ ผ่อนคลาย ใกล้ชิดธรรมชาติ</p></div>
+              <span class="best-fit">ตัวเลือกที่กำลังดู</span>
+            </div>
+            <div class="pros-cons">
+              <article class="info-card">
+                <h4><span class="status-icon positive">✓</span> ข้อดี (Pros)</h4>
+                <ul id="prosList"></ul>
+              </article>
+              <article class="info-card">
+                <h4><span class="status-icon negative">×</span> ข้อเสีย (Cons)</h4>
+                <ul id="consList"></ul>
+              </article>
+              <article class="info-card advice-card">
+                <h4><span class="status-icon advice">✦</span> การวิเคราะห์ &amp; คำแนะนำ</h4>
+                <p id="analysisText"></p>
+                <ul id="recommendList"></ul>
+              </article>
+            </div>
+            <div class="outcome-heading"><span>◎</span><b>ผลลัพธ์ที่อาจเกิดขึ้น</b></div>
+            <div class="outcome-grid">
+              <article class="outcome-card outcome-positive"><h4>☻ ถ้าเลือกเส้นทางนี้</h4><p id="ifYes"></p></article>
+              <article class="outcome-card outcome-neutral"><h4>☷ ถ้าไม่เลือกเส้นทางนี้</h4><p id="ifNo"></p></article>
+            </div>
+            <div class="recommendation"><span class="recommendation-icon">✧</span><div><b>สรุปคำแนะนำ</b><p id="summaryText"></p></div></div>
+          </div>
+        </div>
+      </section>
+
+      </div>
+      <div class="page" data-page="analyze" hidden>
+      <section class="section analyze-section" id="custom">
+        <div class="custom-card">
+          <div class="eyebrow">YOUR TURN</div><h2>วิเคราะห์การตัดสินใจของคุณ</h2>
+          <p class="section-intro">ใส่คำถามและตัวเลือกของคุณ เพื่อจัดระเบียบความคิดก่อนตัดสินใจ</p>
+          <form id="decisionForm">
+            <label class="field"><span>หัวข้อที่ต้องการตัดสินใจ <i>*</i></span><input id="topic" required maxlength="120" autocomplete="off" placeholder="เช่น จะไปเที่ยวที่ไหนดี?" /></label>
+            <label class="field"><span>ตัวเลือกของคุณ <i>*</i></span><textarea id="choices" required placeholder="พิมพ์อย่างน้อย 2 ตัวเลือก คั่นด้วยเครื่องหมายจุลภาค เช่น ไปภูเขา, ไปทะเล"></textarea></label>
+            <div class="form-row">
+              <label class="field"><span>สิ่งที่สำคัญที่สุด</span><select id="priority"><option value="balance">ความสมดุลโดยรวม</option><option value="budget">งบประมาณ</option><option value="comfort">ความสะดวกสบาย</option><option value="experience">ประสบการณ์ใหม่</option><option value="time">เวลา</option></select></label>
+              <label class="field"><span>งบประมาณ (ไม่บังคับ)</span><input id="budget" placeholder="เช่น 3,000 บาท" inputmode="text" /></label>
+            </div>
+            <button class="btn btn-primary submit-btn" type="submit">✦ สร้างแนวทางเปรียบเทียบ <span>→</span></button>
+          </form>
+          <div class="custom-result" id="customResult" aria-live="polite"></div>
+        </div>
+      </section>
+</div>
+      <div class="page" data-page="guide" hidden>
+      <header class="page-head"><div class="eyebrow">GUIDE</div><h1>คู่มือ &amp; เคล็ดลับ</h1><p>วิธีใช้ Another Way และเทคนิคช่วยให้ตัดสินใจได้ดีขึ้น</p></header>
+      <section class="section"><div class="guide-grid">
+        <aside class="how-card">
+          <div class="eyebrow">HOW IT WORKS</div><h2>คิดให้รอบด้าน<br>แล้วเลือกในแบบคุณ</h2>
+          <p>Another Way ไม่ได้ตัดสินใจแทนคุณ แต่ช่วยให้มองเห็นภาพรวมของแต่ละทางเลือกได้ง่ายขึ้น</p>
+          <div class="steps">
+            <div class="step"><span>01</span><div><b>กำหนดคำถาม</b><small>ระบุสิ่งที่คุณกำลังลังเลและตัวเลือกที่มี</small></div></div>
+            <div class="step"><span>02</span><div><b>เปรียบเทียบอย่างเป็นระบบ</b><small>พิจารณาข้อดี ข้อเสีย เวลา และค่าใช้จ่าย</small></div></div>
+            <div class="step"><span>03</span><div><b>มองผลลัพธ์ที่เป็นไปได้</b><small>คิดถึงสิ่งที่อาจได้และสิ่งที่อาจต้องแลก</small></div></div>
+            <div class="step"><span>04</span><div><b>เลือกตามเป้าหมายของคุณ</b><small>ใช้ข้อมูลประกอบการตัดสินใจให้เหมาะกับชีวิตจริง</small></div></div>
+          </div>
+          <div class="plant-art" aria-hidden="true"><span>❧</span><small>Grow through every choice.</small></div>
+        </aside><div><h3 class="sub-h">เทคนิคตัดสินใจ</h3><div class="tip-grid tip-grid-2"><article class="tip-card"><span class="round-icon">⏱</span><b>กฎ 10-10-10</b><p>ถามตัวเองว่า อีก 10 นาที 10 เดือน และ 10 ปีข้างหน้า คุณจะรู้สึกอย่างไรกับแต่ละตัวเลือก</p></article><article class="tip-card"><span class="round-icon">⚖</span><b>ให้น้ำหนักสิ่งสำคัญ</b><p>ทุกเกณฑ์ไม่เท่ากัน เลือกเกณฑ์หลักเพียง 1 ข้อ เพื่อไม่ให้ตัวเลือกที่ “ดีรอบด้านแต่ไม่โดนใจ” ชนะ</p></article><article class="tip-card"><span class="round-icon">◐</span><b>ระวังอคติ</b><p>ตัวเลือกแรกที่นึกถึงหรือตัวเลือกที่เพื่อนแนะนำ ไม่ได้ดีที่สุดเสมอไป ลองให้คะแนนโดยยังไม่ดูราคา</p></article><article class="tip-card"><span class="round-icon">⚑</span><b>เผื่อแผนสำรอง</b><p>กำหนดวันตัดสินใจ และคิดไว้ว่าถ้าผลไม่เป็นไปตามคาดจะปรับอย่างไร</p></article></div></div></div></section>
+      </div>
+      <div class="page" data-page="history" hidden>
+      <header class="page-head"><div class="eyebrow">HISTORY</div><h1>ประวัติการวิเคราะห์</h1><p>ผลที่คุณบันทึกไว้ เก็บในเบราว์เซอร์ของคุณเท่านั้น ไม่ถูกส่งไปที่ใด</p></header>
+      <section class="section"><div class="history-bar"><span class="soft-pill">บันทึกได้สูงสุด 30 รายการ</span><button class="btn btn-ghost" id="clearHistory" type="button" hidden>ลบทั้งหมด</button></div><div id="historyList" class="history-list"></div></section>
+      </div>
+      <div class="page" data-page="about" hidden>
+      <header class="page-head"><div class="eyebrow">ABOUT</div><h1>เกี่ยวกับ Another Way</h1><p>เครื่องมือช่วยจัดระเบียบความคิดก่อนตัดสินใจ ไม่ได้ตัดสินใจแทนคุณ</p></header>
+      <section class="section"><div class="tip-grid">
+        <article class="tip-card"><span class="round-icon">◎</span><b>เป้าหมายของเรา</b><p>ช่วยให้เห็นข้อดี ข้อเสีย และผลลัพธ์ของทุกทางเลือกอย่างเป็นระบบ</p></article>
+        <article class="tip-card"><span class="round-icon">♧</span><b>ตัดสินใจในแบบคุณ</b><p>คะแนนมาจากค่านิยมและเกณฑ์ที่คุณให้ ไม่มีคำตอบถูกผิดตายตัว</p></article>
+        <article class="tip-card"><span class="round-icon">⚿</span><b>ข้อมูลเป็นส่วนตัว</b><p>ทุกอย่างประมวลผลและบันทึกในเครื่องของคุณ ไม่มีการอัปโหลดข้อมูล</p></article>
+      </div>
+      <h3 class="sub-h">คำถามที่พบบ่อย</h3>
+      <div class="faq">
+        <details><summary>คะแนนคำนวณอย่างไร?</summary><p>คะแนนแต่ละเกณฑ์ (1–5) คูณน้ำหนัก แล้วเทียบกับคะแนนเต็ม เกณฑ์หลักที่คุณเลือกมีน้ำหนัก 3 เท่า เกณฑ์อื่นมีน้ำหนัก 1</p></details>
+        <details><summary>ตัวอย่างการวิเคราะห์ใช้ AI หรือไม่?</summary><p>ไม่ใช้ ตัวอย่างเป็นข้อมูลสาธิตที่เตรียมไว้ เพื่อให้เห็นรูปแบบการคิด ไม่ใช่คำแนะนำเฉพาะบุคคล</p></details>
+        <details><summary>ข้อมูลที่บันทึกอยู่ที่ไหน?</summary><p>อยู่ใน localStorage ของเบราว์เซอร์นี้ หากล้างข้อมูลเบราว์เซอร์หรือเปลี่ยนเครื่อง ประวัติจะหายไป</p></details>
+        <details><summary>ใช้กับเรื่องสำคัญได้ไหม?</summary><p>ใช้จัดระเบียบความคิดได้ แต่เรื่องสุขภาพ การเงิน หรือกฎหมาย ควรปรึกษาผู้เชี่ยวชาญประกอบด้วย</p></details>
+      </div></section>
+      </div>
+      <footer class="footer"><span>© 2026 Another Way · Decision Analysis &amp; Support</span><span>More options. Better decisions. <b>✦</b></span></footer>
+    </main>
+  </div>
+  <nav class="tabbar" aria-label="เมนูด้านล่าง">
+    <a href="#home" data-route="home"><span>⌂</span>หน้าหลัก</a>
+    <a href="#examples" data-route="examples"><span>▧</span>ตัวอย่าง</a>
+    <a class="tab-main" href="#analyze" data-route="analyze"><span>✧</span>วิเคราะห์</a>
+    <a href="#history" data-route="history"><span>◷</span>ประวัติ</a>
+    <button type="button" id="tabMenu"><span>☰</span>เมนู</button>
+  </nav>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
